@@ -24,7 +24,7 @@ jobs:
 
       - save_cache:
           paths:
-            - dist
+            - ~/repo/dist/
           key: frontend-artifact-{{ checksum "package.json" }}
 
 
