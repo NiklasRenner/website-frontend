@@ -11,20 +11,53 @@ jobs:
 
       - restore_cache:
           keys:
-            - v1-dependencies-{{ checksum "package.json" }}
-            - v1-dependencies-
+            - npm-dependencies-{{ checksum "package.json" }}
 
       - run: npm install
 
       - save_cache:
           paths:
             - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: npm-dependencies-{{ checksum "package.json" }}
 
       - run: npm run build-prod
+
+      - save_cache:
+          paths:
+            - dist
+          key: frontend-artifact-{{ checksum "package.json" }}
+
+
+  deploy:
+    docker:
+      - image: circleci/node:10-browsers
+
+    working_directory: ~/repo
+
+    steps: # need to checkout code again for the package.json checksum
+      - checkout
+
+      - restore_cache:
+          keys:
+            - frontend-artifact-{{ checksum "package.json" }}
 
       - add_ssh_keys:
           fingerprints:
             - "24:45:ff:10:7c:52:1c:49:4c:0b:45:4b:4b:86:7b:65"
 
-      - run: scp -prq -o stricthostkeychecking=no dist/website-frontend/* $SSH_USER@$SSH_HOST:/var/www/angular/
+      - run: ssh -o stricthostkeychecking=no $SSH_USER@$SSH_HOST "rm -r /var/www/angular/*"
+
+      - run: scp -rq -o stricthostkeychecking=no dist/website-frontend/* $SSH_USER@$SSH_HOST:/var/www/angular/
+
+workflows:
+  version: 2
+  package-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
