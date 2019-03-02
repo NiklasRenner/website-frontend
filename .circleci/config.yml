@@ -13,14 +13,14 @@ jobs:
           keys:
             - npm-dependencies-{{ checksum "package.json" }}
 
-      - run: npm install
+      - run: npm run install-ci
 
       - save_cache:
           paths:
             - node_modules
           key: npm-dependencies-{{ checksum "package.json" }}
 
-      - run: npm run build-prod
+      - run: npm run build-prod-ci
 
       - save_cache:
           paths:
