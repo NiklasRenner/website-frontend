@@ -1,4 +1,4 @@
-# Angular frontend for [renner.id](https://renner.id)
+# Angular frontend for [https://renner.id](https://renner.id)
 
 Personal project for personal website.
 
