@@ -1,0 +1,18 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~octicons/build/build.css";
+
+body {
+  padding-top: 75px;
+  background: #007bff url("assets/img/background.svg") fixed;
+}
+
+.container-custom {
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.footer {
+  padding-top:  15px;
+  color: #777777;
+  border-top: 1px solid #E5E5E5;
+}
