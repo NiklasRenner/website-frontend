@@ -16,3 +16,11 @@ body {
   color: #777777;
   border-top: 1px solid #E5E5E5;
 }
+
+.terminal-img {
+  display: block;
+  max-height: 250px;
+  width: 350px;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
