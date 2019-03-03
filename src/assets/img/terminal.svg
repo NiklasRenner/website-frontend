@@ -6,15 +6,17 @@
     <rect fill="#686f80" width="194.49467" height="117.58771"
           x="7.2926202" y="20.36351" ry="7.3239622"/>
     <text fill="#ffffff" style="font-weight:bold;font-size:11px;font-family:monospace">
-      <tspan x="15" y="37">&gt; sudo su</tspan>
-      <tspan x="15" y="50">&gt; rm -rf /</tspan>
+      <tspan x="15" y="37">local$ ssh renner.id</tspan>
+      <tspan x="15" y="51">renner.id - welcome!</tspan>
+      <tspan x="15" y="65">renner$ sudo su</tspan>
+      <tspan x="15" y="79">renner$ rm -rf /</tspan>
     </text>
     <circle fill="#00ff00" cx="171.33609" cy="12.620566" r="4.1541066"/>
     <circle fill="#ffff00" cx="182.94408" cy="12.796546" r="4.1541066"/>
     <circle fill="#ff6600" cx="194.48326" cy="13.05413" r="4.1541066"/>
     <text fill="#ffffff" style="font-weight:bold;font-size:11px;font-family:monospace">
-      <tspan x="80" y="50">|</tspan>
-      <animate attributeName="opacity" values="0;1;1" dur="0.8s" repeatCount="indefinite"/>
+      <tspan x="116" y="79">|</tspan>
+      <animate attributeName="opacity" values="1;1;0" dur="0.7s" repeatCount="indefinite"/>
     </text>
   </g>
 </svg>
