@@ -22,10 +22,12 @@ jobs:
 
       - run: npm run build-prod-ci
 
+      - run: echo "$CIRCLE_WORKFLOW_ID" > _env_var_holder
+
       - save_cache:
           paths:
             - ~/repo/dist/
-          key: frontend-artifact-$CIRCLE_WORKFLOW_ID
+          key: frontend-artifact-{{ checksum "_env_var_holder" }}
 
 
   deploy:
@@ -35,9 +37,11 @@ jobs:
     working_directory: ~/repo
 
     steps:
+      - run: echo "$CIRCLE_WORKFLOW_ID" > _env_var_holder
+
       - restore_cache:
           keys:
-            - frontend-artifact-$CIRCLE_WORKFLOW_ID
+            - frontend-artifact-{{ checksum "_env_var_holder" }}
 
       - add_ssh_keys:
           fingerprints:
