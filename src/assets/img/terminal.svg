@@ -2,33 +2,22 @@
      width="210mm" height="297mm" viewBox="4 4 200 136" version="1.1">
   <g>
     <rect
-      style="fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.86348683;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-      width="198.43748" height="135.77303"
+      style="fill:#343a40" width="198.43748" height="135.77303"
       x="5.2916665" y="4.4464293" ry="9.1385689"/>
     <rect
-      style="fill:#666666;fill-opacity:1;stroke:none;stroke-width:1.24964678;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-      width="194.49467" height="117.58771"
+      style="fill:#686f80" width="194.49467" height="117.58771"
       x="7.2926202" y="20.36351" ry="7.3239622"/>
-    <text
-      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.96628284px;line-height:1.25;font-family:monospace;-inkscape-font-specification:'monospace Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.22846422"
-      x="14.933572" y="33.978775">
-      <tspan x="14.933572" y="33.978775" style="stroke-width:0.22846422">&gt; sudo su</tspan>
-      <tspan x="14.933572" y="47.68663" style="stroke-width:0.22846422">&gt; rm -rf /</tspan>
+    <text style="font-weight:bold;font-size:11px;font-family:monospace;fill:#ffffff">
+      <tspan x="15" y="36">&gt; sudo su</tspan>
+      <tspan x="15" y="49">&gt; rm -rf /</tspan>
     </text>
-    <circle
-      style="fill:#00ff00;fill-opacity:1;stroke:none;stroke-width:0.86348683;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-      cx="171.33609" cy="12.620566" r="4.1541066"/>
-    <circle
-      style="fill:#ffff00;fill-opacity:1;stroke:none;stroke-width:0.86348683;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-      cx="182.94408" cy="12.796546" r="4.1541066"/>
-    <circle
-      style="fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:0.86348683;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-      cx="194.48326" cy="13.05413" r="4.1541066"/>
-    <text
-      style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:10.96628284px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.22846422"
-      x="83.245308" y="47.15358">
-      <tspan x="83.245308" y="47.15358" style="stroke-width:0.22846422">|</tspan>
-      <animate attributeName="opacity" values="0;1;1" dur="0.8s" repeatCount="indefinite" />
+    <circle style="fill:#00ff00" cx="171.33609" cy="12.620566" r="4.1541066"/>
+    <circle style="fill:#ffff00" cx="182.94408" cy="12.796546" r="4.1541066"/>
+    <circle style="fill:#ff6600" cx="194.48326" cy="13.05413" r="4.1541066"/>
+    <text style="font-weight:bold;font-size:11px;font-family:monospace;fill:#ffffff">
+      <tspan x="80" y="49">|</tspan>
+      <animate attributeName="opacity" values="0;1;1"
+               dur="0.8s" repeatCount="indefinite"/>
     </text>
   </g>
 </svg>
