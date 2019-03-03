@@ -15,7 +15,7 @@
     <circle fill="#ffff00" cx="182.94408" cy="12.796546" r="4.1541066"/>
     <circle fill="#ff6600" cx="194.48326" cy="13.05413" r="4.1541066"/>
     <text fill="#ffffff" style="font-weight:bold;font-size:11px;font-family:monospace">
-      <tspan x="116" y="79">|</tspan>
+      <tspan x="124" y="79">|</tspan>
       <animate attributeName="opacity" values="1;1;0" dur="0.7s" repeatCount="indefinite"/>
     </text>
   </g>
