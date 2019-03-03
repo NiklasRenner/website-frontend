@@ -47,7 +47,7 @@ jobs:
           fingerprints:
             - "24:45:ff:10:7c:52:1c:49:4c:0b:45:4b:4b:86:7b:65"
 
-      - run: ssh -o stricthostkeychecking=no $SSH_USER@$SSH_HOST "rm -r /var/www/angular/*"
+      - run: ssh -o stricthostkeychecking=no $SSH_USER@$SSH_HOST "rm -r /var/www/angular/* || true"
 
       - run: scp -rq -o stricthostkeychecking=no dist/website-frontend/* $SSH_USER@$SSH_HOST:/var/www/angular/
 
