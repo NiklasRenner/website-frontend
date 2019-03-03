@@ -33,8 +33,7 @@ jobs:
 
 
   deploy:
-    build:
-      machine: true
+    machine: true
 
     working_directory: ~/repo
 
