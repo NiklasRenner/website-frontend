@@ -2,9 +2,9 @@
      viewBox="4 4 201 137" height="144mm" width="208mm">
   <g>
     <rect fill="#343a40" width="198.44" height="135.75"
-          x="5.29" y="4.45" ry="9.14"/>
-    <rect fill="#686f80" width="194.49" height="117.59"
-          x="7.29" y="20.36" ry="7.33"/>
+          x="5.29" y="4.45" ry="7.33"/>
+    <rect fill="#686f80" width="194.49" height="117.79"
+          x="7.29" y="20.45" ry="6"/>
     <text fill="#ffffff" style="font-weight:bold;font-size:11px;font-family:monospace">
       <tspan x="15" y="37">local$ ssh renner.id</tspan>
       <tspan x="15" y="51">renner.id - welcome!</tspan>
