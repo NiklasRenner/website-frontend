@@ -3,17 +3,20 @@
   <g>
     <rect fill="#343a40" width="198.44" height="135.75"
           x="5.29" y="4.45" ry="7.33"/>
-    <rect fill="#686f80" width="194.49" height="117.79"
+    <rect fill="#606070" width="194.49" height="117.79"
           x="7.29" y="20.45" ry="6"/>
     <text fill="#ffffff" style="font-weight:bold;font-size:11px;font-family:monospace">
-      <tspan x="15" y="37">local$ ssh renner.id</tspan>
+      <tspan x="15" y="37"><a fill="#ffe107">me@local$</a> ssh renner.id</tspan>
       <tspan x="15" y="51">renner.id - welcome!</tspan>
-      <tspan x="15" y="65">renner$ sudo su</tspan>
-      <tspan x="15" y="79">renner$ rm -rf /</tspan>
+      <tspan x="15" y="79"><a fill="#28c745">renner$</a> sudo su</tspan>
+      <tspan x="15" y="93"><a fill="#28c745">renner$</a> rm -rf /</tspan>
     </text>
-    <circle fill="#00ff00" cx="172.5" cy="12.75" r="4.2"/>
-    <circle fill="#ffff00" cx="184" cy="12.75" r="4.2"/>
-    <circle fill="#ff6600" cx="195.5" cy="12.75" r="4.2"/>
+    <text fill="#ffffff" style="font-weight:bold;font-size:8px;font-family:monospace">
+      <tspan x="12" y="15">/bin/bash --login</tspan>
+    </text>
+    <circle fill="#28c745" cx="172.5" cy="12.75" r="4.2"/>
+    <circle fill="#ffe107" cx="184" cy="12.75" r="4.2"/>
+    <circle fill="#fc3545" cx="195.5" cy="12.75" r="4.2"/>
     <text fill="#ffffff" style="font-weight:bold;font-size:11px;font-family:monospace">
       <tspan x="124" y="79">|</tspan>
       <animate attributeName="opacity" values="1;1;0" dur="0.7s" repeatCount="indefinite"/>
