@@ -24,3 +24,7 @@ body {
   max-width: 100%;
   margin-bottom: 16px;
 }
+
+.terminal-img:hover {
+  transform: skewY(45deg);
+}
