@@ -2,7 +2,7 @@
      viewBox="4 4 201 137" height="144mm" width="208mm">
   <g>
     <rect fill="#343a40" width="198.44" height="135.75" x="5.29" y="4.45" ry="7.33"/>
-    <text fill="#ffffff" style="font-weight:bold;font-size:8px;font-family:monospace">
+    <text fill="#fff" style="font-weight:bold;font-size:8px;font-family:monospace">
       <tspan x="12" y="15">/bin/bash --login</tspan>
     </text>
     <circle fill="#28c745" cx="172.5" cy="12.75" r="4.2"/>
@@ -10,14 +10,15 @@
     <circle fill="#fc3545" cx="195.5" cy="12.75" r="4.2"/>
 
     <rect fill="#606070" width="194.49" height="117.79" x="7.29" y="20.45" ry="6"/>
-    <text fill="#ffffff" style="font-weight:bold;font-size:11px;font-family:monospace">
-      <tspan x="16" y="38"><a fill="#ffe107">me@local$</a> ssh renner.id</tspan>
-      <tspan x="16" y="52">renner.id - welcome!</tspan>
-      <tspan x="16" y="80"><a fill="#28c745">renner$</a> sudo su</tspan>
-      <tspan x="16" y="94"><a fill="#28c745">renner$</a> rm -rf /</tspan>
+    <text fill="#fff" style="font-weight:bold;font-size:11px;font-family:monospace">
+      <tspan x="15" y="37"><a fill="#28c745">me@local$</a> ssh renner.id</tspan>
+      <tspan x="15" y="51">renner.id - welcome!</tspan>
+      <tspan x="15" y="79"><a fill="#ffe107">me@renner$</a> sudo su</tspan>
+      <tspan x="15" y="93">[sudo] password for me:</tspan>
+      <tspan x="15" y="107"><a fill="#fc3545">root#</a> rm -rf /</tspan>
     </text>
-    <text fill="#ffffff" style="font-weight:bold;font-size:11px;font-family:monospace">
-      <tspan x="124" y="94">|</tspan>
+    <text fill="#fff" style="font-weight:bold;font-size:11px;font-family:monospace">
+      <tspan x="112" y="107">|</tspan>
       <animate attributeName="opacity" values="1;1;0" dur="0.7s" repeatCount="indefinite"/>
     </text>
   </g>
