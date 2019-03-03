@@ -12,7 +12,7 @@ body {
 }
 
 .footer {
-  padding-top:  15px;
+  padding-top: 15px;
   color: #777777;
   border-top: 1px solid #E5E5E5;
 }
@@ -22,9 +22,11 @@ body {
   max-height: 250px;
   width: 350px;
   max-width: 100%;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  transition: all 1s ease-out 0s;
 }
 
 .terminal-img:hover {
-  transform: skewY(45deg);
+  transform: scale(0, 0) rotate(1080deg);
+  transition: all 5s ease-in 0.1s;
 }
