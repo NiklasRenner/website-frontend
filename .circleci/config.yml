@@ -22,6 +22,8 @@ jobs:
 
       - run: npm run build-prod-ci
 
+      # need unique id to link this cache to deploy step, such that no rebuild is needed.
+      # it's however not possible to use environment variables in cache-key names, so have to save it to file first
       - run: echo "$CIRCLE_WORKFLOW_ID" > _env_var_holder
 
       - save_cache:
@@ -31,8 +33,8 @@ jobs:
 
 
   deploy:
-    docker:
-      - image: circleci/node:10-browsers
+    build:
+      machine: true
 
     working_directory: ~/repo
 
@@ -47,6 +49,7 @@ jobs:
           fingerprints:
             - "24:45:ff:10:7c:52:1c:49:4c:0b:45:4b:4b:86:7b:65"
 
+      # always return true, in case there is nothing to delete.
       - run: ssh -o stricthostkeychecking=no $SSH_USER@$SSH_HOST "rm -r /var/www/angular/* || true"
 
       - run: scp -rq -o stricthostkeychecking=no dist/website-frontend/* $SSH_USER@$SSH_HOST:/var/www/angular/
