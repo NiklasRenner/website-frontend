@@ -6,12 +6,16 @@ import {Observable} from 'rxjs';
   providedIn: 'root'
 })
 export class ApiService {
-  apiURL = 'https://dev.renner.id/services';
+  apiURL = 'https://dev.renner.id';
 
   constructor(private httpClient: HttpClient) {
   }
 
   public getServices(): Observable<any[]> {
-    return this.httpClient.get<any[]>(this.apiURL);
+    return this.httpClient.get<any[]>(this.apiURL + '/services');
+  }
+
+  public getLocked(): Observable<any[]> {
+    return this.httpClient.get<any[]>(this.apiURL + '/locked');
   }
 }
