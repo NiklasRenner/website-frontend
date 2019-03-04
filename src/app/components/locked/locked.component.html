@@ -1,0 +1,25 @@
+<div class="container container-custom bg-light shadow rounded">
+  <div class="page-header">
+    <h2 class="bd-title"><i appOcticon="lock" size="32px"></i> Locked</h2>
+  </div>
+  <div class="table-responsive rounded-top">
+    <table class="table table-striped">
+      <thead class="thead-dark">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">IP</th>
+        <th scope="col">Description</th>
+      </tr>
+      </thead>
+      <tbody class="text-monospace">
+      <tr *ngFor="let service of services; ">
+        <th scope="row">{{service.id}}</th>
+        <td>{{service.name}}</td>
+        <td>{{service.ip}}</td>
+        <td>{{service.description}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
