@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {AuthenticationService} from '@app/services/authentication.service';
 import {User} from '@app/models/user.model';
 import {Router} from '@angular/router';
+import {faBars} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +10,7 @@ import {Router} from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
+  menuIcon = faBars;
   user: User = null;
   navbarOpen = false;
 

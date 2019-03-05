@@ -6,7 +6,7 @@
       </a>
 
       <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
-        <i appOcticon="list-unordered" size="24px"></i>
+        <fa-icon [icon]="menuIcon"></fa-icon>
       </button>
 
       <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">

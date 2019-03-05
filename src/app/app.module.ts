@@ -4,7 +4,6 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from '@app/app-routing.module';
 import {AppComponent} from '@app/app.component';
 import {HeaderComponent} from '@app/components/header/header.component';
-import {OcticonDirective} from '@app/middleware/directives/octicon.directive';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {MainComponent} from '@app/components/main/main.component';
 import {LoginComponent} from '@app/components/login/login.component';
@@ -13,11 +12,11 @@ import {ErrorInterceptor} from '@app/middleware/helpers/error.interceptor';
 import {ReactiveFormsModule} from '@angular/forms';
 import {LockedComponent} from '@app/components/locked/locked.component';
 import {FooterComponent} from './components/footer/footer.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
     AppComponent,
-    OcticonDirective,
     LoginComponent,
     LockedComponent,
     HeaderComponent,
@@ -28,7 +27,8 @@ import {FooterComponent} from './components/footer/footer.component';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FontAwesomeModule
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
