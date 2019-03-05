@@ -1,3 +1,8 @@
+.gradient-header {
+  background: rgb(52,58,64);
+  background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(0,123,255,1) 53%, rgba(248,249,250,1) 100%);
+}
+
 .terminal-img {
   max-width: 100%;
   transition: all 1s ease-out 0s;
