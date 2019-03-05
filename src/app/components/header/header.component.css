@@ -1,12 +1,13 @@
 .navbar-brand .img-responsive {
   max-height: 20px;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .navbar-toggler {
   color: #FFFFFF;
 }
 
-.navbar {
-  margin-bottom: 24px;
+.nav-link {
+  cursor: pointer;
 }

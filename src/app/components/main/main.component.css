@@ -1,0 +1,9 @@
+.terminal-img {
+  max-width: 100%;
+  transition: all 1s ease-out 0s;
+}
+
+.terminal-img:hover {
+  transform: scale(0, 0) rotate(1080deg);
+  transition: all 5s ease-in 0.1s;
+}

@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {AppRoutingModule} from '@app/app-routing.module';
 import {AppComponent} from '@app/app.component';
-import {NavbarComponent} from '@app/components/navbar/navbar.component';
+import {HeaderComponent} from '@app/components/header/header.component';
 import {OcticonDirective} from '@app/middleware/directives/octicon.directive';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {MainComponent} from '@app/components/main/main.component';
@@ -12,15 +12,17 @@ import {JwtInterceptor} from '@app/middleware/helpers/jwt.interceptor';
 import {ErrorInterceptor} from '@app/middleware/helpers/error.interceptor';
 import {ReactiveFormsModule} from '@angular/forms';
 import {LockedComponent} from '@app/components/locked/locked.component';
+import {FooterComponent} from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     OcticonDirective,
-    MainComponent,
     LoginComponent,
-    LockedComponent
+    LockedComponent,
+    HeaderComponent,
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -5,10 +5,10 @@ import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
-  templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  templateUrl: './header.component.html',
+  styleUrls: ['./header.component.css']
 })
-export class NavbarComponent {
+export class HeaderComponent {
   user: User = null;
   navbarOpen = false;
 
@@ -25,6 +25,11 @@ export class NavbarComponent {
   logout() {
     this.authService.logout();
     this.goHome();
+  }
+
+  scrollIntoView(id: string){
+    const element = document.getElementById(id);
+    element.scrollIntoView({behavior: 'smooth'});
   }
 
   goHome() {
