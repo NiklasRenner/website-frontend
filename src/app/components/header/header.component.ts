@@ -27,7 +27,7 @@ export class HeaderComponent {
     this.goHome();
   }
 
-  scrollIntoView(id: string){
+  scrollIntoView(id: string) {
     const element = document.getElementById(id);
     element.scrollIntoView({behavior: 'smooth'});
   }

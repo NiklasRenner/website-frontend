@@ -20,7 +20,7 @@ export class AuthenticationService {
   }
 
   login(username: string, password: string) {
-    return this.http.post<any>('https://dev.renner.id/login', {username, password}, {observe:'response'})
+    return this.http.post<any>('https://dev.renner.id/login', {username, password}, {observe: 'response'})
       .pipe(map(response => {
         const token = response.headers.get('Authorization');
 
