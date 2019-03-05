@@ -34,7 +34,7 @@ export class HeaderComponent {
 
   goHome() {
     this.router.navigate(['/']).then(() => {
-      scroll(0, 0);
+      scroll({left: 0, top: 0, behavior: 'smooth'});
     });
   }
 }
