@@ -6,7 +6,6 @@ import {AfterViewChecked, Component, ElementRef, HostListener, OnInit, Renderer2
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit, AfterViewChecked {
-
   @ViewChild('full')
   full: ElementRef;
 
@@ -28,8 +27,13 @@ export class AppComponent implements OnInit, AfterViewChecked {
     const currentContentPadding = Number(contentNative.style.paddingBottom.replace('px', ''));
     const fullHeightWithoutPadding = fullHeight - currentContentPadding;
     const diff = window.innerHeight - fullHeightWithoutPadding;
+    const navPadding = 55;
 
-    this.renderer.setStyle(contentNative, 'padding-bottom', diff - 55 + 'px');
+    if (diff > navPadding) {
+      this.renderer.setStyle(contentNative, 'padding-bottom', diff - navPadding + 'px');
+    } else {
+      this.renderer.setStyle(contentNative, 'padding-bottom', 0 + 'px');
+    }
   }
 
   ngOnInit(): void {
