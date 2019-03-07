@@ -4,6 +4,7 @@ import {AuthGuard} from '@app/middleware/guards/auth.guard';
 import {LoginComponent} from '@app/components/login/login.component';
 import {NgModule} from '@angular/core';
 import {LockedComponent} from '@app/components/locked/locked.component';
+import {PasteComponent} from '@app/components/paste/paste.component';
 
 const appRoutes: Routes = [
   {
@@ -13,6 +14,10 @@ const appRoutes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'paste',
+    component: PasteComponent
   },
   {
     path: 'locked',

@@ -11,8 +11,9 @@ import {JwtInterceptor} from '@app/middleware/helpers/jwt.interceptor';
 import {ErrorInterceptor} from '@app/middleware/helpers/error.interceptor';
 import {ReactiveFormsModule} from '@angular/forms';
 import {LockedComponent} from '@app/components/locked/locked.component';
-import {FooterComponent} from './components/footer/footer.component';
+import {FooterComponent} from '@app/components/footer/footer.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { PasteComponent } from '@app/components/paste/paste.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
     LockedComponent,
     HeaderComponent,
     MainComponent,
-    FooterComponent
+    FooterComponent,
+    PasteComponent
   ],
   imports: [
     BrowserModule,

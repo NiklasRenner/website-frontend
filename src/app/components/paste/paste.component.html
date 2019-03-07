@@ -1,0 +1,28 @@
+<div class="bg-light py-4">
+  <div class="container">
+    <h2>Paste to API from commandline</h2>
+    <hr/>
+    <h5>Paste directly to API</h5>
+    <p>Using curl & intermediary script:</p>
+    <pre><code>curl -s https://dev.renner.id/dot/paste | sh -s $FILE</code></pre>
+    <p>Using curl only:</p>
+    <pre><code>curl -H "Content-Type: text/plain" --data-binary $FILE https://dev.renner.id/p/</code></pre>
+    <h5>Download script</h5>
+    <p>Download using curl:</p>
+    <pre><code>curl -s https://dev.renner.id/dot/paste > ./paste</code></pre>
+    <p>Download using wget:</p>
+    <pre><code>wget https://dev.renner.id/dot/paste</code></pre>
+    <p>Make runnable:</p>
+    <pre><code>chmod u+x paste</code></pre>
+    <h5>Paste to API</h5>
+    <p>From file:</p>
+    <pre><code>./paste $FILE</code></pre>
+    <p>From stdin(piped):</p>
+    <pre><code>cat $FILE | ./paste</code></pre>
+    <h5>Use globally on machine</h5>
+    <p>Save as user script:</p>
+    <pre><code>sudo mv paste /usr/local/bin/</code></pre>
+    <p>After relogging it can be used like this:</p>
+    <pre><code>paste $FILE</code></pre>
+  </div>
+</div>

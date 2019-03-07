@@ -4,3 +4,7 @@ body {
   padding-top: 55px;
   background: #343a40;
 }
+
+pre code {
+  color: #dc3545;
+}
