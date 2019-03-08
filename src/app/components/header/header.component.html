@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <div class="container">
-      <a class="navbar-brand" (click)="goHome()">
+      <a class="navbar-brand" (click)="collapseNavbar(); goHome()">
         <img src="../../../assets/img/logo.svg" class="img-responsive" alt="<Renner />">
       </a>
 
@@ -12,19 +12,22 @@
       <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link text-white" (click)="scrollIntoView('contact')">Contact</a>
+            <a class="nav-link text-white" (click)="collapseNavbar(); scrollIntoView('contact')">Contact</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link text-white" routerLink="/paste">Paste</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle active" (click)="toggleToolsDropdown()">Tools</a>
+            <div class="dropdown-menu" [ngClass]="{ 'show': toolDropdownOpen }">
+              <a class="dropdown-item text-white-50" routerLink="/paste" (click)="collapseNavbar()">Paste</a>
+            </div>
           </li>
           <li class="nav-item" *ngIf="user">
-            <a class="nav-link text-white" routerLink="/locked">Secret</a>
+            <a class="nav-link text-white" routerLink="/locked" (click)="collapseNavbar()">Secret</a>
           </li>
           <li class="nav-item" *ngIf="user">
-            <a class="nav-link text-white" (click)="logout()">Logout</a>
+            <a class="nav-link text-white" (click)="collapseNavbar(); logout()">Logout</a>
           </li>
           <li class="nav-item" *ngIf="!user">
-            <a class="nav-link text-white" routerLink="/login">Login</a>
+            <a class="nav-link text-white" routerLink="/login" (click)="collapseNavbar()">Login</a>
           </li>
         </ul>
       </div>

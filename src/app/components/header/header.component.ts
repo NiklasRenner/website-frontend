@@ -13,6 +13,7 @@ export class HeaderComponent {
   menuIcon = faBars;
   user: User = null;
   navbarOpen = false;
+  toolDropdownOpen = false;
 
   constructor(private authService: AuthenticationService, private router: Router) {
     this.authService.currentUser.subscribe(data => {
@@ -20,8 +21,20 @@ export class HeaderComponent {
     });
   }
 
+  toggleToolsDropdown() {
+    this.toolDropdownOpen = !this.toolDropdownOpen;
+  }
+
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
+    if (!this.navbarOpen) {
+      this.toolDropdownOpen = false;
+    }
+  }
+
+  collapseNavbar() {
+    this.navbarOpen = false;
+    this.toolDropdownOpen = false;
   }
 
   logout() {

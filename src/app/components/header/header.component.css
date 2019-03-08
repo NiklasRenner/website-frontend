@@ -11,3 +11,12 @@
 .nav-link {
   cursor: pointer;
 }
+
+.dropdown .dropdown-menu {
+  background-color: #343a40;
+  border: none;
+}
+
+.dropdown .dropdown-menu .dropdown-item:hover {
+  background-color: inherit;
+}
