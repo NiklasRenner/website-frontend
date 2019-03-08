@@ -1,7 +1,22 @@
 <div class="bg-light py-4">
   <div class="container">
+    <h2>Paste something</h2>
+    <hr class="bg-white"/>
+    <form [formGroup]="pasteForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <textarea id="data" formControlName="data" class="form-control" rows="25"></textarea>
+      </div>
+      <div class="form-group text-right">
+        <button [disabled]="!pasteForm.valid" class="btn btn-primary">Paste</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<div class="bg-dark py-4">
+  <div class="container text-white">
     <h2>Paste to API from commandline</h2>
-    <hr/>
+    <hr class="bg-white"/>
     <h5>Paste directly to API</h5>
     <p>Using curl & intermediary script:</p>
     <pre><code>curl -s https://dev.renner.id/dot/paste | sh -s $FILE</code></pre>

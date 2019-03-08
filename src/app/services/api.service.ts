@@ -18,4 +18,12 @@ export class ApiService {
   public getLocked(): Observable<any[]> {
     return this.httpClient.get<any[]>(this.apiURL + '/locked');
   }
+
+  public postPaste(data: string): Observable<string> {
+    return this.httpClient.post(this.apiURL + '/p', data, {responseType: 'text'});
+  }
+
+  public getPaste(id: string): Observable<string> {
+    return this.httpClient.get(this.apiURL + '/p/' + id, {responseType: 'text'});
+  }
 }

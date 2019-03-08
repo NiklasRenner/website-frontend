@@ -14,6 +14,7 @@ import {LockedComponent} from '@app/components/locked/locked.component';
 import {FooterComponent} from '@app/components/footer/footer.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { PasteComponent } from '@app/components/paste/paste.component';
+import { PasteShowComponent } from './components/paste-show/paste-show.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PasteComponent } from '@app/components/paste/paste.component';
     HeaderComponent,
     MainComponent,
     FooterComponent,
-    PasteComponent
+    PasteComponent,
+    PasteShowComponent
   ],
   imports: [
     BrowserModule,
