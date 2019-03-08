@@ -19,12 +19,24 @@ export class PasteShowComponent implements OnInit {
     return this.contentLength > 20 ? this.contentLength : 20;
   }
 
+  private countLines(str: string): number {
+    let result = 0;
+
+    for (let i = 0; i < str.length; i++) {
+      if (str.charAt(i) === '\n') {
+        result++;
+      }
+    }
+
+    return result;
+  }
+
   ngOnInit() {
     this.route.params.subscribe(params => {
       this.id = params.id;
       this.apiService.getPaste(this.id).subscribe(data => {
         this.content = data;
-        this.contentLength = this.content.split('\n').length;
+        this.contentLength = this.countLines(this.content);
       });
     });
   }
