@@ -27,8 +27,5 @@
 
 .active {
   background-color: #343a40;
-}
-
-.active {
-  text-underline: #007bff;
+  color: #007bff !important;
 }
