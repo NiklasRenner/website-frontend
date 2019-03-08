@@ -33,7 +33,7 @@ export class PasteComponent implements OnInit {
 
     this.apiService.postPaste(this.pasteForm.controls.data.value).subscribe(data => {
       const parts = data.split('/');
-      const id = parts[parts.length - 1];
+      const id = parts[parts.length - 1].trim();
       this.router.navigate(['/paste/' + id]);
     });
   }
