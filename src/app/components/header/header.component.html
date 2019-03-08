@@ -12,22 +12,22 @@
       <div class="collapse navbar-collapse" [ngClass]="{ 'show': navbarOpen }">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link text-white" (click)="collapseNavbar(); scrollIntoView('contact')">Contact</a>
+            <a class="nav-link" (click)="collapseNavbar(); scrollIntoView('contact')">Contact</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle active" (click)="toggleToolsDropdown()">Tools</a>
+            <a class="nav-link dropdown-toggle" (click)="toggleToolsDropdown()">Tools</a>
             <div class="dropdown-menu" [ngClass]="{ 'show': toolDropdownOpen }">
-              <a class="dropdown-item text-white-50" routerLink="/paste" (click)="collapseNavbar()">Paste</a>
+              <a class="dropdown-item" routerLink="/paste" routerLinkActive="active" (click)="collapseNavbar()">Paste</a>
             </div>
           </li>
           <li class="nav-item" *ngIf="user">
-            <a class="nav-link text-white" routerLink="/locked" (click)="collapseNavbar()">Secret</a>
+            <a class="nav-link" routerLink="/locked" routerLinkActive="active" (click)="collapseNavbar()">Secret</a>
           </li>
           <li class="nav-item" *ngIf="user">
-            <a class="nav-link text-white" (click)="collapseNavbar(); logout()">Logout</a>
+            <a class="nav-link" (click)="collapseNavbar(); logout()">Logout</a>
           </li>
           <li class="nav-item" *ngIf="!user">
-            <a class="nav-link text-white" routerLink="/login" (click)="collapseNavbar()">Login</a>
+            <a class="nav-link" routerLink="/login" routerLinkActive="active" (click)="collapseNavbar()">Login</a>
           </li>
         </ul>
       </div>
