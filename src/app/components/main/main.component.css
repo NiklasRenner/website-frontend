@@ -22,7 +22,7 @@
   height: calc(100vh - 55px);
   max-height: 1080px;
   background-size: cover;
-  background: rgba(43, 43, 43, 0.7);
+  background: rgba(43, 43, 43, 0.5);
 }
 
 .info-text {
