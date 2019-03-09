@@ -1,14 +1,60 @@
-.gradient-header {
-  background: rgb(52,58,64);
-  background: linear-gradient(180deg, rgba(52,58,64,1) 0%, rgba(0,123,255,1) 53%, rgba(248,249,250,1) 100%);
+.info-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  background-image: url("../../../assets/img/business.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+  max-height: 1080px;
 }
 
-.terminal-img {
-  max-width: 100%;
+.info-overlay {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 500px;
+  height: calc(100vh - 55px);
+  max-height: 1080px;
+  background-size: cover;
+  background: rgba(43, 43, 43, 0.7);
+}
+
+.info-text {
+  padding-bottom: 1rem;
+}
+
+.info-img img {
+  max-height: 200px;
   transition: all 1s ease-out 0s;
 }
 
-.terminal-img:hover {
+.info-img img:hover {
   transform: scale(0, 0) rotate(1080deg);
   transition: all 5s ease-in 0.1s;
+}
+
+.info-links {
+  padding-top: 1rem;
+}
+
+.info-links .list-inline .list-inline-item {
+  padding: 5px;
+}
+
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {
 }

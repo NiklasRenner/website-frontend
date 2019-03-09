@@ -1,10 +1,24 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+.bg-main {
+  background-color: #234099 !important;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   padding-top: 55px;
-  background: #343a40;
+  background: #234099;
 }
 
 pre code {
   color: #dc3545;
+}
+
+a {
+  text-decoration: none;
 }

@@ -13,7 +13,7 @@
 }
 
 .dropdown .dropdown-menu {
-  background-color: #343a40;
+  background-color: #234099;
   border: none;
 }
 
@@ -26,6 +26,6 @@
 }
 
 .active {
-  background-color: #343a40;
+  background-color: #234099;
   color: #007bff !important;
 }

@@ -1,5 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ApiService} from '@app/services/api.service';
+import {faAt} from "@fortawesome/free-solid-svg-icons";
+import {faGithub, faLinkedin} from "@fortawesome/free-brands-svg-icons";
 
 @Component({
   selector: 'app-main',
@@ -8,6 +10,9 @@ import {ApiService} from '@app/services/api.service';
 })
 export class MainComponent implements OnInit {
   services = [];
+  gitIcon = faGithub;
+  linkedInIcon = faLinkedin;
+  mailIcon = faAt;
 
   constructor(private apiService: ApiService) {
   }
