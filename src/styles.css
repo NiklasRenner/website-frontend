@@ -1,7 +1,13 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
 .bg-main {
-  background-color: #234099 !important;
+  /* background-color: #234099; */
+  background-color: #234099;
+}
+
+.bg-other {
+  /* background-color: #f8f9fa; */
+  background-color: #f8f9fa;
 }
 
 body, html {

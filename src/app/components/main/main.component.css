@@ -29,8 +29,19 @@
   padding-bottom: 1rem;
 }
 
+.info-name {
+  font-size: 3rem;
+  font-weight: lighter;
+}
+
+.info-about {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  opacity: .7;
+}
+
 .info-img img {
-  max-height: 200px;
+  max-width: 75%;
   transition: all 1s ease-out 0s;
 }
 
@@ -41,16 +52,40 @@
 
 .info-links {
   padding-top: 1rem;
+  font-size: 2rem;
 }
 
 .info-links .list-inline .list-inline-item {
+  opacity: .7;
   padding: 5px;
 }
 
 @media (min-width: 576px) {
+  .info-img img {
+    max-width: 50%;
+  }
 }
 
 @media (min-width: 768px) {
+  .info-text {
+    padding-bottom: 2rem;
+  }
+
+  .info-name{
+    font-size: 5rem;
+  }
+
+  .info-about {
+    font-size: 2rem;
+  }
+
+  .info-links {
+    padding-top: 2rem;
+    font-size: 3rem;
+  }
+  .info-overlay {
+    min-height: 650px;
+  }
 }
 
 @media (min-width: 992px) {
