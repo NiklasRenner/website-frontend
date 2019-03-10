@@ -29,12 +29,14 @@
 
 .info-name {
   font-size: 3rem;
-  font-weight: lighter;
+  letter-spacing: -3px;
+  font-weight: 400;
 }
 
 .info-about {
   font-size: 1.5rem;
-  font-weight: lighter;
+  letter-spacing: -1px;
+  font-weight: 300;
   opacity: .7;
 }
 
@@ -49,7 +51,7 @@
 }
 
 .info-links {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   font-size: 2rem;
 }
 
@@ -86,7 +88,7 @@
   }
 
   .info-links {
-    padding-top: 2rem;
+    padding-top: 2.5rem;
     font-size: 3rem;
   }
 
