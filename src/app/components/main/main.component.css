@@ -58,6 +58,14 @@
   padding: 5px;
 }
 
+/*
+  add this is to fix ios cover viewport resize
+  @media (width: 768px) {
+  .info-header, .info-overlay {
+    max-height: 800px;
+  }
+} */
+
 @media (min-width: 576px) {
   .info-img img {
     max-width: 50%;
@@ -81,6 +89,7 @@
     padding-top: 2rem;
     font-size: 3rem;
   }
+
   .info-overlay {
     min-height: 650px;
   }
