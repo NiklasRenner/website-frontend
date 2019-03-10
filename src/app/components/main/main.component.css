@@ -24,16 +24,18 @@
 }
 
 .info-text {
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .info-name {
   font-size: 3rem;
   letter-spacing: -3px;
   font-weight: 400;
+  margin-bottom: 0;
 }
 
 .info-about {
+  margin-top: 0;
   font-size: 1.5rem;
   letter-spacing: -1px;
   font-weight: 300;
@@ -51,7 +53,7 @@
 }
 
 .info-links {
-  padding-top: 1.5rem;
+  padding-top: 2rem;
   font-size: 2rem;
 }
 
@@ -76,7 +78,7 @@
 
 @media (min-width: 768px) {
   .info-text {
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
   }
 
   .info-name{
@@ -88,7 +90,7 @@
   }
 
   .info-links {
-    padding-top: 2.5rem;
+    padding-top: 3.5rem;
     font-size: 3rem;
   }
 
