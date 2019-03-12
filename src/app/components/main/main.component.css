@@ -44,6 +44,7 @@ a:hover {
 }
 
 .info-img img {
+  cursor: pointer;
   max-width: 15rem;
 }
 

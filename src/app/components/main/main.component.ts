@@ -19,7 +19,7 @@ export class MainComponent implements OnInit {
 
   scrollIntoView(id: string) {
     const element = document.getElementById(id);
-    window.scrollTo({behavior: 'smooth', left:0, top:element.offsetTop.valueOf() - 55 });
+    window.scroll({behavior: 'smooth', left: 0, top: element.offsetTop.valueOf() - 55});
   }
 
   ngOnInit(): void {
