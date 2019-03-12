@@ -44,7 +44,7 @@ export class HeaderComponent {
 
   scrollIntoView(id: string) {
     const element = document.getElementById(id);
-    element.scrollIntoView({behavior: 'smooth'});
+    window.scrollTo({behavior: 'smooth', left:0, top:element.offsetTop.valueOf() - 55 });
   }
 
   goHome() {

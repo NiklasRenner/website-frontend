@@ -17,6 +17,11 @@ export class MainComponent implements OnInit {
   constructor(private apiService: ApiService) {
   }
 
+  scrollIntoView(id: string) {
+    const element = document.getElementById(id);
+    window.scrollTo({behavior: 'smooth', left:0, top:element.offsetTop.valueOf() - 55 });
+  }
+
   ngOnInit(): void {
     this.apiService.getServices().subscribe(data => {
       this.services = data;
