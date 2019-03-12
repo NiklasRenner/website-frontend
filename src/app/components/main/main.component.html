@@ -1,7 +1,7 @@
 <div class="info-header">
   <div class="info-text">
     <h1 class="info-name">Niklas Renner.</h1>
-    <p class="info-about">Software Developer</p>
+    <h2 class="info-about">Software Developer</h2>
   </div>
 
   <div class="info-img">
@@ -49,15 +49,15 @@
 
     <div class="table-responsive rounded">
       <table class="table table-striped">
-        <thead class="thead-dark">
-        <tr class="bg-main">
+        <thead class="thead-dark bg-main">
+        <tr>
           <th scope="col">Id</th>
           <th scope="col">Name</th>
           <th scope="col">IP</th>
           <th scope="col">Description</th>
         </tr>
         </thead>
-        <tbody class="text-monospace">
+        <tbody>
         <tr *ngFor="let service of services; ">
           <th scope="row">{{service.id}}</th>
           <td>{{service.name}}</td>

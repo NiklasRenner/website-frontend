@@ -1,5 +1,5 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Montserrat:400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Roboto|Montserrat:400,500,600');
 
 .bg-main {
   background-color: #234099;
@@ -16,23 +16,44 @@ body, html {
   padding: 0;
 }
 
-h2 {
-  font-weight: 600;
+body {
+  padding-top: 55px;
+  background: #234099;
 }
 
-th {
-  font-weight:500;
+h2 {
+  font-weight: 500;
+}
+
+p, td, th[scope='row'] {
   font-size: 1rem;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  font-style: normal;
 }
 
 code, .text-monospace {
   font-size: 1rem;
   font-family: 'Roboto Mono', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
+  font-weight: 400;
+  font-style: normal;
 }
 
-body {
-  padding-top: 55px;
-  background: #234099;
+
+.table td, .table th {
+  padding: 0.6rem 0.6rem 0.6rem 0.6rem;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(35, 54, 163, 0.05);
+}
+
+.table .thead-dark th {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  background-color: #234099;
+  border-color: #234099;
 }
 
 pre code {
