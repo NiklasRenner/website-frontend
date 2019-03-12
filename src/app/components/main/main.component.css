@@ -7,11 +7,12 @@ a:hover {
   opacity: 1;
 }
 
-
 .info-header {
   display: flex;
-  color: white;
   text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
   background-color: #234099;
   background-image: url("../../../assets/img/business.jpg");
   background-size: cover;
@@ -19,17 +20,8 @@ a:hover {
   background-attachment: scroll;
   background-position: center center;
   max-height: 1080px;
-}
-
-.info-overlay {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
   min-height: 500px;
   height: calc(100vh - 55px);
-  max-height: 1080px;
 }
 
 .info-text {
@@ -52,13 +44,7 @@ a:hover {
 }
 
 .info-img img {
-  max-width: 75%;
-  transition: all 1s ease-out 0s;
-}
-
-.info-img img:hover {
-  transform: scale(0, 0) rotate(1080deg);
-  transition: all 5s ease-in 0.1s;
+  max-width: 20rem;
 }
 
 .info-links {
@@ -78,15 +64,48 @@ a:hover {
   }
 } */
 
+@media (max-width: 350px) {
+  .info-img img {
+    max-width: 75%;
+  }
+}
+
 @media (min-width: 576px) {
   .info-img img {
-    max-width: 50%;
+    max-width: 18rem;
   }
 }
 
 @media (min-width: 768px) {
   .info-text {
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
+  }
+
+  .info-links {
+    padding-top: 3rem;
+  }
+
+  .info-name{
+    font-size: 4rem;
+  }
+
+  .info-about {
+    font-size: 2rem;
+  }
+
+  .info-img img {
+    max-width: 20rem;
+  }
+
+  .info-header {
+    min-height: 550px;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .info-img img {
+    max-width: 25rem;
   }
 
   .info-name{
@@ -94,20 +113,16 @@ a:hover {
   }
 
   .info-about {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .info-links {
-    padding-top: 4rem;
     font-size: 3rem;
   }
 
-  .info-overlay {
-    min-height: 650px;
+  .info-header {
+    min-height: 700px;
   }
-}
-
-@media (min-width: 992px) {
 }
 
 @media (min-width: 1200px) {

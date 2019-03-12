@@ -18,24 +18,24 @@
   <div class="container text-white">
     <h2>Paste to API from commandline</h2>
     <hr class="bg-white"/>
-    <h5>Paste directly to API</h5>
+    <h4>Paste directly to API</h4>
     <p>Using curl & intermediary script:</p>
     <pre><code>curl -s https://dev.renner.id/dot/paste | sh -s $FILE</code></pre>
     <p>Using curl only:</p>
     <pre><code>curl -H "Content-Type: text/plain" --data-binary $FILE https://dev.renner.id/p/</code></pre>
-    <h5>Download script</h5>
+    <h4>Download script</h4>
     <p>Download using curl:</p>
     <pre><code>curl -s https://dev.renner.id/dot/paste > ./paste</code></pre>
     <p>Download using wget:</p>
     <pre><code>wget https://dev.renner.id/dot/paste</code></pre>
     <p>Make runnable:</p>
     <pre><code>chmod +x paste</code></pre>
-    <h5>Paste to API</h5>
+    <h4>Paste to API</h4>
     <p>From file:</p>
     <pre><code>./paste $FILE</code></pre>
     <p>From stdin(piped):</p>
     <pre><code>cat $FILE | ./paste</code></pre>
-    <h5>Use globally on machine</h5>
+    <h4>Use globally on machine</h4>
     <p>Save as user script(paste is already used, so rename):</p>
     <pre><code>sudo mv paste /usr/local/bin/paster</code></pre>
     <p>Script can now be run anywhere like this:</p>

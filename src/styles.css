@@ -1,26 +1,12 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Montserrat:300,400,500,600');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono|Montserrat:400,500,600');
 
 .bg-main {
-  /* background-color: #234099; */
   background-color: #234099;
 }
 
 .bg-other {
-  /* background-color: #f8f9fa; */
   background-color: #f8f9fa;
-}
-
-.bg-3 {
-  background-color: #04395E;
-}
-
-.bg-4 {
-  background-color: #ADE25D;
-}
-
-.bg-5 {
-  background-color: #FCEC52;
 }
 
 body, html {
@@ -30,7 +16,17 @@ body, html {
   padding: 0;
 }
 
+h2 {
+  font-weight: 600;
+}
+
+th {
+  font-weight:500;
+  font-size: 1rem;
+}
+
 code, .text-monospace {
+  font-size: 1rem;
   font-family: 'Roboto Mono', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !important;
 }
 
