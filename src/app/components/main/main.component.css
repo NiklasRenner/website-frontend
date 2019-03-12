@@ -44,7 +44,7 @@ a:hover {
 }
 
 .info-img img {
-  max-width: 20rem;
+  max-width: 15rem;
 }
 
 .info-links {
@@ -71,9 +71,6 @@ a:hover {
 }
 
 @media (min-width: 576px) {
-  .info-img img {
-    max-width: 18rem;
-  }
 }
 
 @media (min-width: 768px) {

@@ -1,6 +1,6 @@
 <div class="bg-other py-4">
   <div class="container">
-    <h5>Paste tool</h5>
+    <h4>Paste tool</h4>
     <hr/>
     <p>Paste something here to save it.</p>
     <form [formGroup]="pasteForm" (ngSubmit)="onSubmit()">
@@ -16,26 +16,26 @@
 
 <div class="bg-dark py-4">
   <div class="container text-white">
-    <h5>Paste to API from commandline</h5>
+    <h4>Paste to API from commandline</h4>
     <hr class="bg-white"/>
-    <h6>Paste directly to API</h6>
+    <h5>Paste directly to API</h5>
     <p>Using curl & intermediary script:</p>
     <pre><code>curl -s https://dev.renner.id/dot/paste | sh -s $FILE</code></pre>
     <p>Using curl only:</p>
     <pre><code>curl -H "Content-Type: text/plain" --data-binary $FILE https://dev.renner.id/p/</code></pre>
-    <h6>Download script</h6>
+    <h5>Download script</h5>
     <p>Download using curl:</p>
     <pre><code>curl -s https://dev.renner.id/dot/paste > ./paste</code></pre>
     <p>Download using wget:</p>
     <pre><code>wget https://dev.renner.id/dot/paste</code></pre>
     <p>Make runnable:</p>
     <pre><code>chmod +x paste</code></pre>
-    <h6>Paste to API</h6>
+    <h5>Paste to API</h5>
     <p>From file:</p>
     <pre><code>./paste $FILE</code></pre>
     <p>From stdin(piped):</p>
     <pre><code>cat $FILE | ./paste</code></pre>
-    <h6>Use globally on machine</h6>
+    <h5>Use globally on machine</h5>
     <p>Save as user script(paste is already used, so rename):</p>
     <pre><code>sudo mv paste /usr/local/bin/paster</code></pre>
     <p>Script can now be run anywhere like this:</p>
