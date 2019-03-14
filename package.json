@@ -8,6 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
+    "serve-int": "ng serve --configuration=integration --host 0.0.0.0",
     "build-prod": "ng build --prod",
     "build-prod-ci": "ng build --prod --no-progress",
     "install-ci": "npm install --no-progress"

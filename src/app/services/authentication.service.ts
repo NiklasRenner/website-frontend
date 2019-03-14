@@ -3,12 +3,14 @@ import {HttpClient} from '@angular/common/http';
 import {BehaviorSubject, Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 import {User} from '@app/models/user.model';
+import {environment} from '../../environments/environment';
 
 
 @Injectable({providedIn: 'root'})
 export class AuthenticationService {
   private currentUserSubject: BehaviorSubject<User>;
   public currentUser: Observable<User>;
+  private apiURL: string = environment.backendUrl;
 
   constructor(private http: HttpClient) {
     this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('user')));
@@ -20,7 +22,7 @@ export class AuthenticationService {
   }
 
   login(username: string, password: string) {
-    return this.http.post<any>('https://dev.renner.id/login', {username, password}, {observe: 'response'})
+    return this.http.post<any>(`${this.apiURL}/login`, {username, password}, {observe: 'response'})
       .pipe(map(response => {
         const token = response.headers.get('Authorization');
 

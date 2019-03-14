@@ -1,5 +1,4 @@
 export const environment = {
   production: false,
-  backendUrl: 'https://localhost:8080'
+  backendUrl: 'https://dev.renner.id'
 };
-

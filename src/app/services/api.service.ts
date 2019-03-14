@@ -1,29 +1,30 @@
 import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Observable} from 'rxjs';
+import {environment} from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ApiService {
-  apiURL = 'https://dev.renner.id';
+  private apiURL: string = environment.backendUrl;
 
   constructor(private httpClient: HttpClient) {
   }
 
   public getServices(): Observable<any[]> {
-    return this.httpClient.get<any[]>(this.apiURL + '/services');
+    return this.httpClient.get<any[]>(`${this.apiURL}/services`);
   }
 
   public getLocked(): Observable<any[]> {
-    return this.httpClient.get<any[]>(this.apiURL + '/locked');
+    return this.httpClient.get<any[]>(`${this.apiURL}/locked`);
   }
 
   public postPaste(data: string): Observable<string> {
-    return this.httpClient.post(this.apiURL + '/p', data, {responseType: 'text'});
+    return this.httpClient.post(`${this.apiURL}/p`, data, {responseType: 'text'});
   }
 
   public getPaste(id: string): Observable<string> {
-    return this.httpClient.get(this.apiURL + '/p/' + id, {responseType: 'text'});
+    return this.httpClient.get(`${this.apiURL}/p/${id}`, {responseType: 'text'});
   }
 }
