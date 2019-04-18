@@ -25,6 +25,10 @@ export class ApiService {
   }
 
   public getPaste(id: string): Observable<string> {
-    return this.httpClient.get(`${this.apiURL}/p/${id}`, {responseType: 'text'});
+    return this.httpClient.get(this.createPasteUrl(id), {responseType: 'text'});
+  }
+
+  public createPasteUrl(id: string): string {
+    return `${this.apiURL}/p/${id}`;
   }
 }
