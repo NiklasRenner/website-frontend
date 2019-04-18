@@ -24,8 +24,4 @@ export class PasteShowComponent implements OnInit {
       });
     });
   }
-
-  navigateToRawPaste(){
-    window.location.href = this.url;
-  }
 }
