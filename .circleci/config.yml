@@ -46,7 +46,7 @@ jobs:
 
       - add_ssh_keys:
           fingerprints:
-            - "24:45:ff:10:7c:52:1c:49:4c:0b:45:4b:4b:86:7b:65"
+            - "5b:01:54:2b:8b:cc:57:20:c0:be:2c:24:f6:22:18:81"
 
       # always return true, in case there is nothing to delete.
       - run: ssh -o stricthostkeychecking=no $SSH_USER@$SSH_HOST "rm -r /var/www/angular/* || true"
