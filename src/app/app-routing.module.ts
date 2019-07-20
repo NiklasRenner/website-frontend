@@ -6,6 +6,7 @@ import {NgModule} from '@angular/core';
 import {LockedComponent} from '@app/components/locked/locked.component';
 import {PasteComponent} from '@app/components/paste/paste.component';
 import {PasteShowComponent} from '@app/components/paste-show/paste-show.component';
+import {Base64Component} from "@app/components/base64/base64.component";
 
 const appRoutes: Routes = [
   {
@@ -23,6 +24,10 @@ const appRoutes: Routes = [
   {
     path: 'paste/:id',
     component: PasteShowComponent
+  },
+  {
+    path: 'base64',
+    component: Base64Component
   },
   {
     path: 'locked',

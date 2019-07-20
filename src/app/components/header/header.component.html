@@ -18,6 +18,7 @@
             <a class="nav-link dropdown-toggle" (click)="toggleToolsDropdown()">Tools</a>
             <div class="dropdown-menu" [ngClass]="{ 'show': toolDropdownOpen }">
               <a class="dropdown-item" routerLink="/paste" routerLinkActive="active" (click)="collapseNavbar()">Paste</a>
+              <a class="dropdown-item" routerLink="/base64" routerLinkActive="active" (click)="collapseNavbar()">Base64</a>
             </div>
           </li>
           <li class="nav-item" *ngIf="user">

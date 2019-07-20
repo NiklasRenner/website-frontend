@@ -15,6 +15,7 @@ import {FooterComponent} from '@app/components/footer/footer.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import { PasteComponent } from '@app/components/paste/paste.component';
 import { PasteShowComponent } from './components/paste-show/paste-show.component';
+import {Base64Component} from "@app/components/base64/base64.component";
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { PasteShowComponent } from './components/paste-show/paste-show.component
     MainComponent,
     FooterComponent,
     PasteComponent,
-    PasteShowComponent
+    PasteShowComponent,
+    Base64Component
   ],
   imports: [
     BrowserModule,

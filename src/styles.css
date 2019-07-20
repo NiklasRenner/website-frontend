@@ -119,3 +119,11 @@ pre code {
 a, a:hover, a:focus, a:visited, a:active {
   text-decoration: none;
 }
+
+.wrap {
+  overflow-x: auto;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
