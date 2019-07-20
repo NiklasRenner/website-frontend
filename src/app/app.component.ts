@@ -6,10 +6,10 @@ import {AfterViewChecked, Component, ElementRef, HostListener, OnInit, Renderer2
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements OnInit, AfterViewChecked {
-  @ViewChild('full')
+  @ViewChild('full', {static: true})
   full: ElementRef;
 
-  @ViewChild('content')
+  @ViewChild('content',  {static: true})
   content: ElementRef;
 
   constructor(private elementRef: ElementRef, private renderer: Renderer2) {

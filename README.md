@@ -10,3 +10,11 @@ Run `ng serve --host 0.0.0.0` to bind to all interfaces, instead of localhost on
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+
+## Update dependencies
+
+```bash
+npm install -g npm-check-updates
+ncu -u
+npm install
+``` 
