@@ -42,7 +42,8 @@ export class PasteComponent implements OnInit {
         const id = parts[parts.length - 1].trim();
         this.router.navigate(['/paste/' + id]);
       }, error => {
-        this.errorMessage = "Input too long"; //TODO figure out how to get real error here, right now getting "OK" as error object.
+        console.log("error" + error); //TODO figure out how to get real error here, right now getting "OK" as error object.
+        this.errorMessage = "Input too long";
       })
   }
 }
