@@ -5,10 +5,12 @@
     <p>Paste something here to save it.</p>
     <form [formGroup]="pasteForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
-        <textarea id="data" formControlName="data" class="form-control text-monospace" rows="25"></textarea>
+        <p *ngIf="errorMessage" class="alert alert-danger">{{errorMessage}}</p>
+        <textarea (ngModelChange)="clearErrors()" id="data" formControlName="data" class="form-control text-monospace" rows="25"></textarea>
       </div>
       <div class="form-group text-right">
-        <button [disabled]="!pasteForm.valid" class="btn btn-main">Paste</button>
+        <button type="reset" [disabled]="!pasteForm.valid" class="btn btn-main mr-1">Clear</button>
+        <button type="submit" [disabled]="!pasteForm.valid" class="btn btn-main">Paste</button>
       </div>
     </form>
   </div>
