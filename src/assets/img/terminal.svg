@@ -12,7 +12,7 @@
     <rect fill="#606070" width="194.49" height="117.79" x="7.29" y="20.45" ry="6"/>
     <text fill="#fff" style="font-weight:bold;font-size:11px;font-family:monospace">
       <tspan x="15" y="37"><a fill="#28c745">me@local$</a> ssh renner.id</tspan>
-      <tspan x="15" y="51">renner.id - welcome!</tspan>
+      <tspan x="15" y="51">dev.renner.id - welcome!</tspan>
       <tspan x="15" y="79"><a fill="#ffe107">me@renner$</a> sudo su</tspan>
       <tspan x="15" y="93">[sudo] password for me:</tspan>
       <tspan x="15" y="107"><a fill="#fc3545">root#</a> rm -rf /</tspan>
