@@ -1,4 +1,4 @@
-# Angular frontend for [https://renner.id](https://renner.id) [![CircleCI](https://circleci.com/gh/NiklasRenner/website-frontend.svg?style=svg)](https://circleci.com/gh/NiklasRenner/website-frontend)
+# Angular frontend 
 
 Personal project for personal website. 
 
